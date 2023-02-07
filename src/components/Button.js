@@ -1,7 +1,9 @@
-const Button = ({ onClick, text }) => (
-	<button onClick={onClick}>
+import { Button } from '@mui/material'
+
+const CountryButton = ({ onClick, text }) => (
+	<Button variant="contained" color="primary" type="submit" size="small" onClick={onClick}>
 		{text}
-	</button>
+	</Button>
 )
 
-export default Button
+export default CountryButton

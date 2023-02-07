@@ -1,4 +1,4 @@
-import Button from './Button'
+import CountryButton from './Button'
 import Country from './Country'
 
 const Countries = ({filtered, search, setNewSearch}) => {
@@ -12,7 +12,7 @@ const Countries = ({filtered, search, setNewSearch}) => {
 		  filtered.length <= 10 && filtered.length > 1 ? (
 			<div key={country.name.common}>
 				<p>
-					{country.name.common} <Button text='show' onClick={() => setNewSearch(country.name.common)} />
+					{country.name.common} <CountryButton text='show' onClick={() => setNewSearch(country.name.common)} />
 				</p>
 			</div>
 
