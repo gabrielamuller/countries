@@ -21,7 +21,7 @@ const Country = ({country}) => {
 
 	return(
 		<div className='country' key={country.name.common}>
-			<h1>{country.name.common}</h1>
+			<h2>{country.name.common}</h2>
 			<p><b>Capital:</b> {country.capital}</p>
 			<p><b>Area:</b> {country.area}</p>
 			<Languages languages={Object.entries(country.languages)} />

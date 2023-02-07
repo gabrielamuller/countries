@@ -1,7 +1,7 @@
 const Languages = ({ languages }) => {
 	return(
 	  <div>
-		<h2>Languages</h2>
+		<h3>Languages</h3>
 		<ul>
 		  {languages.map((language) =>
 			<li key={language[0]}>
