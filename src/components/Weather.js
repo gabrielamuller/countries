@@ -1,3 +1,7 @@
+/**
+* Show weather for the capital city in the single country view.
+*/
+
 const Weather = ({ weather, capital}) => {
 	if (!weather) {
 		return null

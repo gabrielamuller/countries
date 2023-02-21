@@ -19,7 +19,6 @@ const App = () => {
   }, [])
 
  const handleSearch = (event) => {
-  console.log(event.target.value)
   setNewSearch(event.target.value);
 }
 
@@ -28,16 +27,14 @@ const filtered = search.length > 0
   country.name.common.toLowerCase().includes(search.toLowerCase())
   ) : []
 
-console.log(filtered);
-
   return (
     <Container>
-    <div className='filter'>
-      <Filter onChange={handleSearch} value={search}/>
-    </div>
-    <div className='countries'>
-      <Countries filtered={filtered} setNewSearch={setNewSearch}/>
-    </div>
+      <div className='filter'>
+        <Filter onChange={handleSearch} value={search}/>
+      </div>
+      <div className='countries'>
+        <Countries filtered={filtered} setNewSearch={setNewSearch}/>
+      </div>
     </Container>
   )
 }

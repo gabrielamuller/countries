@@ -1,3 +1,7 @@
+/**
+* Button to display countries.
+*/
+
 import { Button } from '@mui/material'
 
 const CountryButton = ({ onClick, text }) => (

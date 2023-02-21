@@ -1,3 +1,7 @@
+/**
+* Display languages of the country in the single country view.
+*/
+
 const Languages = ({ languages }) => {
 	return(
 	  <div>

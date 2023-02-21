@@ -1,3 +1,7 @@
+/**
+* Filtered search results.
+*/
+
 import CountryButton from './Button'
 import Country from './Country'
 
