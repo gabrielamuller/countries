@@ -16,4 +16,4 @@ const Weather = ({ weather, capital}) => {
 	)
 }
 
-export default Weather
+export default Weather;

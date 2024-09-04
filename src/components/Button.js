@@ -1,13 +1,16 @@
 /**
-* Button to display countries.
-*/
+ * Button to display countries.
+ */
 
-import { Button } from '@mui/material'
+const CountryButton = ({ onClick, text, countryName }) => (
+	<button
+	  type="button"
+	  onClick={onClick}
+	  aria-label={`Show details for ${countryName}`}
+	>
+	  <span className="sr-only">Show details for {countryName}</span>
+	  {text}
+	</button>
+);
 
-const CountryButton = ({ onClick, text }) => (
-	<Button variant="contained" color="primary" type="submit" size="small" onClick={onClick}>
-		{text}
-	</Button>
-)
-
-export default CountryButton
+export default CountryButton;

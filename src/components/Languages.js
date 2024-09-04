@@ -16,4 +16,4 @@ const Languages = ({ languages }) => {
 	)
 }
 
-export default Languages
+export default Languages;

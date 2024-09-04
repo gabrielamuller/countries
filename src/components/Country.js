@@ -29,10 +29,10 @@ const Country = ({country}) => {
 			<p><b>Capital:</b> {country.capital}</p>
 			<p><b>Area:</b> {country.area}</p>
 			<Languages languages={Object.entries(country.languages)} />
-			<img src={country.flags.png} alt='Country flag' />
+			<img src={country.flags.png} alt={`Flag of ${country.name.common}`} />
 			<Weather weather={weather} capital={capital}/>
 		</div>
 	)
 }
 
-export default Country
+export default Country;

@@ -4,8 +4,6 @@ import axios from 'axios'
 import Filter from './components/Filter'
 import Countries from './components/Countries'
 
-import { Container } from '@mui/material'
-
 const App = () => {
   const [countries, setCountries] = useState([])
   const [search, setNewSearch] = useState("");
@@ -28,14 +26,14 @@ const filtered = search.length > 0
   ) : []
 
   return (
-    <Container>
+    <main>
       <div className='filter'>
         <Filter onChange={handleSearch} value={search}/>
       </div>
       <div className='countries'>
         <Countries filtered={filtered} setNewSearch={setNewSearch}/>
       </div>
-    </Container>
+    </main>
   )
 }
 
