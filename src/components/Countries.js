@@ -20,6 +20,7 @@ const Countries = ({ filtered, search, setNewSearch }) => {
     <>
       {/* Announce search result updates to screen readers */}
       <div
+        className="countries__status"
         role="status"
         aria-live="polite"
         aria-atomic="true"
@@ -41,7 +42,7 @@ const Countries = ({ filtered, search, setNewSearch }) => {
         ) : (
           filtered.map((country) =>
             filtered.length <= 10 && filtered.length > 1 ? (
-              <div className="countries-list" key={country.name.common}>
+              <div className="countries__list" key={country.name.common}>
                 {/* Screen readers announce the country name */}
                 <p aria-label={`Country name: ${country.name.common}`}>
                   {country.name.common}

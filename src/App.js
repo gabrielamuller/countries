@@ -27,12 +27,12 @@ const filtered = search.length > 0
 
   return (
     <main>
-      <div className='filter'>
+      <section className='filter'>
         <Filter onChange={handleSearch} value={search}/>
-      </div>
-      <div className='countries'>
+      </section>
+      <section className='countries'>
         <Countries filtered={filtered} setNewSearch={setNewSearch}/>
-      </div>
+      </section>
     </main>
   )
 }

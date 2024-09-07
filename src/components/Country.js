@@ -24,7 +24,7 @@ const Country = ({country}) => {
 	  }, [url])
 
 	return(
-		<div className='country' key={country.name.common}>
+		<div className='countries__country' key={country.name.common}>
 			<h2>{country.name.common}</h2>
 			<p><b>Capital:</b> {country.capital}</p>
 			<p><b>Area:</b> {country.area}</p>
