@@ -42,3 +42,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Deployment
 The app is deployed to Github pages. The deployment scripts are configured on package.json file.
+
+## Accessibility
+Siteimprove accessibility tool has been used to test the accessibility. The site has also been manually tested for accessibility using a keyboard and screen reader.
+
+* Semantic HTML: The application uses semantic HTML elements for accessibility. Proper use of HTML elements helps assistive technologies like screen readers understand the structure of the page.
+
+* ARIA Attributes: ARIA attributes have been implemented to provide additional context to assistive technologies.
+
+* Keyboard Navigation: The application has been tested with keyboard use so that the user can navigate with a tab button.
+
+* Screen Reader Optimizations: ARIA live region have been implemented to announce dynamic content changes and all interactive elements such as the search field have descriptive labels.
+
+* Contrast and Text Size: Text colors and backgrounds have been selected to provide sufficient contrast. Text size can be scaled using browser controls to accommodate users with visual impairments.
+
+* Alt Text for Images: All images and non-text content include alt texts, which can be read by screen readers to describe images.
