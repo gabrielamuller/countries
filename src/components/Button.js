@@ -6,10 +6,10 @@ const CountryButton = ({ onClick, text, countryName }) => (
 	<button
 	  type="button"
 	  onClick={onClick}
+	  // Screen reader text
 	  aria-label={`Show details for ${countryName}`}
 	>
-	  <span className="sr-only">Show details for {countryName}</span>
-	  {text}
+	{text}
 	</button>
 );
 

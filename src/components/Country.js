@@ -2,13 +2,14 @@
 * Single country view.
 */
 
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React, { useEffect, useState } from "react"
+import axios from "axios"
 
-import Languages from './Languages'
-import Weather from './Weather'
+import Languages from "./Languages"
+import Weather from "./Weather"
 
 const Country = ({country}) => {
+	// Get the weather details.
 	const [weather, setWeather] = useState();
 	const capital = country.capital
 
@@ -24,8 +25,8 @@ const Country = ({country}) => {
 	  }, [url])
 
 	return(
-		<div className='countries__country' key={country.name.common}>
-			<h2>{country.name.common}</h2>
+		// Display country data.
+		<div className="countries__country" key={country.name.common}>
 			<p><b>Capital:</b> {country.capital}</p>
 			<p><b>Area:</b> {country.area}</p>
 			<Languages languages={Object.entries(country.languages)} />

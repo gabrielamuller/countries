@@ -8,14 +8,10 @@ The app uses a REST API from here: https://restcountries.com to provide data for
 
 The weather data uses an API from here https://openweathermap.org.
 
-Material UI library is used for some styling.
-
-Moved to its own repository from here: https://github.com/gabrielamuller/fullstack_react/tree/master/part-2/countries
-
 ## The Interface
 The user needs to type the search query into the search field.
 
-If there are over ten countries that match the query, the user is prompted to make their query more specific. If there are ten or fewer countries, but more than one, then a list of all countries matching the query are shown.
+If there are over ten countries that match the query, the user is prompted to make their query more specific. If there are ten or fewer countries, but more than one, then a list of all countries matching the query is shown.
 
 On the country list there is a button next to the name of the country, which when pressed, shows the view for that country. Also, if there is only one country matching the query, the single view of the country is shown.
 
